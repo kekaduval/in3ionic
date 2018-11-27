@@ -1,0 +1,223 @@
+ page-sign-in {
+    input,
+    button {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      -webkit-transform: translate(-50%, -300%) !important;
+              transform: translate(-50%, -300%) !important;
+      display: block !important;
+      width: 70vw !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3) !important;
+    }
+    
+    input {
+      padding: .25rem 0 !important;
+      border: 0 !important;
+      border-bottom: 1px solid #f4d03f !important;
+      outline: 0 !important;
+      background: transparent !important;
+      color: #fff !important;
+      font-size: 3rem !important;
+      line-height: 4rem !important;
+      letter-spacing: .125rem !important;
+      transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3) !important;
+    }
+    
+    input::-moz-selection {
+      background:#fff !important;
+    }
+    
+    input::selection {
+      background: #fff !important;
+    }
+    
+    button,
+    .signup-button {
+      padding: .25em 0 !important;
+      border: 0 !important;
+      outline: 0 !important;
+      background: #f4d03f !important;
+      color: rgba(255, 255, 255, 0.85) !important;
+      font-size: 2rem !important;
+      line-height: 3.6rem !important;
+      letter-spacing: .0625rem !important;
+      box-shadow: 0 3px 5px 1px #fff !important;
+      /* text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.2); */
+    }
+    
+    input:focus,
+    button:focus {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -100%) !important;
+              transform: translate(-50%, -100%) !important;
+      pointer-events: auto !important;
+      transition: all 0.4s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.5s !important;
+      z-index: 10!important ;
+    }
+    
+    input:focus ~ input,
+    input:focus ~ button {
+      -webkit-transform: translate(-50%, 500%) !important; 
+              transform: translate(-50%, 500%) v;
+      transition: all .5s ease-in !important;
+    }
+    
+    input:focus ~ label .label-text {
+      -webkit-transform: translate(-50%, 300%) !important;
+              transform: translate(-50%, 300%) !important;
+      transition: all .5s ease-in !important;
+    }
+    
+    input:focus ~ .tip {
+      opacity: 1 !important;
+    }
+    
+    input:focus ~ .signup-button,
+    button:focus ~ .signup-button {
+      opacity: 0 !important;
+    }
+    
+    input:focus + label .label-text {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -100%) !important;
+              transform: translate(-50%, -100%) !important;
+      transition: all 0.3s cubic-bezier(0.1, 0.45, 0.1, 0.85) 0.4s !important;
+    }
+    
+    input:focus + label .nav-dot:before {
+      background: #f4d03f !important;
+      box-shadow: 0 0 0 0.15rem #fff, 0 0 0.05rem 0.26rem #f4d03f !important;
+    }
+    
+    .tip {
+      position: fixed v;
+      top: 57% !important;
+      left: 50% !important;
+      -webkit-transform: translate(-50%, -50%) !important;
+              transform: translate(-50%, -50%) !important;
+      width: 70% !important;
+      opacity: 0 !important;
+      color: #fff !important;
+      font-size: .875rem !important;
+      font-weight: 300 !important;
+      letter-spacing: .125rem !important;
+      text-transform: uppercase !important;
+      text-align: right !important;
+      transition: opacity .25s .5s !important;
+    }
+    
+    .signup-button,
+    .signup-button-trigger {
+      position: fixed !important;
+      top: 50%!important ;
+      left: 50% !important;
+      -webkit-transform: translate(-50%, -100%) !important;
+              transform: translate(-50%, -100%) !important;
+      width: 70vw !important;
+      padding: .25rem 0 !important;
+      line-height: 3.6rem !important;
+      text-align: center !important;
+      pointer-events: none !important;
+      cursor: pointer!important ;
+      transition: opacity .4s .3s !important;
+    }
+    
+    .signup-button-trigger {
+      opacity: 0 !important;
+      pointer-events: auto !important;
+    }
+    
+    // .label-text {
+    //   position: fixed !important;
+    //   top: calc(50% - 4rem) !important;
+    //   left: 50% !important;
+    //   -webkit-transform: translate(-50%, -300%) !important;
+    //           transform: translate(-50%, -300%) !important;
+    //   width: 70vw !important;
+    //   padding: 3.125rem 0 1.5rem !important;
+    //   text-transform: uppercase!important ;
+    //   color: #fff !important;
+    //   opacity: 0 !important;
+    //   font-size: 1.125rem !important;
+    //   font-weight: 300 !important;
+    //   letter-spacing: .125rem !important;
+    //   pointer-events: none !important;
+    //   transition: all 0.4s cubic-bezier(0.4, 0.25, 0.8, 0.3) 0.05s !important;
+    // }
+    
+    .nav-dot {
+      cursor: pointer !important; 
+      position: fixed !important;
+      padding: .625rem 1.25rem .625rem .625rem !important;
+      top: 52% !important;
+      right: 1.25rem !important;
+    }
+    .nav-dot:before {
+      content: '' !important;
+      display: inline-block !important;
+      border-radius: 50% !important;
+      width: .375rem !important;
+      height: .375rem !important;
+      margin-right: .625rem !important;
+      position: fixed !important;
+      background-color: #fff !important;
+      border: 0 !important;
+      transition: all 0.25 !important ;
+    }
+    .nav-dot:hover:before {
+      width: .625rem !important;
+      height: .625rem !important;
+      margin-top: -.125rem !important;
+      margin-left: -.125rem !important;
+      background-color: #f4d03f !important;
+    }
+    
+    label[for="input-1"] .nav-dot {
+      margin-top: -150px !important;
+    }
+    
+    label[for="input-2"] .nav-dot {
+      margin-top: -125px v;
+    }
+    
+    label[for="input-3"] .nav-dot {
+      margin-top: -100px !important;
+    }
+    
+    label[for="input-4"] .nav-dot {
+      margin-top: -75px !important;
+    }
+    
+    label[for="input-5"] .nav-dot {
+      margin-top: -50px !important;
+    }
+    
+    label[for="input-6"] .nav-dot {
+      margin-top: -25px !important;
+    }
+    
+    // * {
+    //   margin: 0 !important;
+    //   padding: 0 !important;
+    //   box-sizing: border-box !important;
+    // }
+    
+    html, body {
+      width: 100% !important;
+      height: 100% !important;
+      /* background-image: linear-gradient(to bottom right, #111E25 0%, #111 100%); */
+      font-family: 'Lato', sans-serif !important;
+      background: #19b5fe !important;
+    }
+    
+    form {
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+    }
+
+
+}

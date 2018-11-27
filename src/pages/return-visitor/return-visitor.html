@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Returning Visitor</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Enter your email address or phone number</ion-label>
+    <ion-input [(ngModel)]="nameOrEmail" type="text"></ion-input>
+  </ion-item>
+
+  <button ion-button block round large (click)="lookup()">
+    Continue
+    <ion-icon padding-left name="arrow-forward"></ion-icon>
+  </button>
+
+</ion-content>

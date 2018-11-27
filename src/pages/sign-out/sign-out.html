@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Out</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Start email</ion-label>
+    <ion-input type="email" (ionChange)="search($event.value)"></ion-input>
+  </ion-item>
+
+  <ion-list *mobxAutorun>
+    <button ion-item (click)="signOut(member)" *ngFor="let member of members">
+      <ion-label>{{member.name}}</ion-label>
+      <ion-note item-end>Signed in on {{member.lastSignIn | date:'medium'}}</ion-note>
+    </button>
+  </ion-list>
+
+
+</ion-content>

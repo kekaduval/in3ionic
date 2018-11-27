@@ -1,0 +1,166 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign In</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+  <!-- <form #signInForm="ngForm"
+    (ngSubmit)="signIn(signInForm)">
+
+    <ion-list>
+
+      <ion-item>
+        <ion-input [ngModel]="fetchedInfo.name"
+          type="text"
+          name="name"
+          placeholder="Your Full Name"
+          required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [ngModel]="fetchedInfo.email"
+          type="email"
+          name="email"
+          placeholder="Your Email Address"
+          required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [ngModel]="fetchedInfo.phone"
+          type="number"
+          name="phone"
+          placeholder="Your Phone Number"
+          (input)="this.onInput($event)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [ngModel]="fetchedInfo.company"
+          type="text"
+          name="company"
+          placeholder="Company"
+          required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Where are you located?</ion-label>
+        <ion-select [ngModel]="fetchedInfo.location"
+          name="location"
+          required>
+          <ion-option value="dc">DC</ion-option>
+          <ion-option value="md">MD</ion-option>
+          <ion-option value="va">VA</ion-option>
+          <ion-option value="other">Other</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="signInForm.value.location == 'other'">
+        <ion-input type="text"
+          name="otherLocation"
+          placeholder="Other Location"
+          required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Reason for Visit</ion-label>
+        <ion-select ngModel
+          name="reason"
+          required>
+          <ion-option *ngFor="let reason of reasons"
+            [value]="reason">{{reason}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="signInForm.value.reason == 'Event'">
+        <ion-label>Event</ion-label>
+        <ion-select ngModel
+          name="event"
+          required>
+          <ion-option *ngFor="let event of events$ | async"
+            [value]="event">{{event.title}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="signInForm.value.reason == 'Meeting'">
+        <ion-label>Who are you meeting with?</ion-label>
+        <ion-select ngModel
+          name="member"
+          required>
+          <ion-option *ngFor="let member of members$ | async"
+            [value]="member">{{member.name}}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item *ngIf="signInForm.value.reason == reasons[4]">
+        <ion-input type="text"
+          name="otherReason"
+          placeholder="Other Reason"
+          required></ion-input>
+      </ion-item>
+
+      <button
+        ion-button
+        block
+        round
+        large
+        click="signInForm.form.submit()">
+        Continue
+        <ion-icon padding-left
+          name="arrow-forward"></ion-icon>
+      </button>
+    </ion-list>
+
+  </form> -->
+  
+  <!--- KEKA'S CODE-->
+  <form>
+      <input id="input-1" type="text" placeholder="" required autofocus />
+      <label for="input-1">
+        <span class="label-text">Full Name</span>
+        <span class="nav-dot"></span>
+        <div class="signup-button-trigger">Sign Up</div>
+      </label>
+    
+    
+      <input id="input-2" type="text" placeholder="" required />
+      <label for="input-2">
+        <span class="label-text">Your Phone Number</span>
+        <span class="nav-dot"></span>
+      </label>
+    
+      <input id="input-3" type="email" placeholder="" required />
+      <label for="input-3">
+        <span class="label-text">Email</span>
+        <span class="nav-dot"></span>
+      </label>
+    
+      <input id="input-4" type="text" placeholder="" required />
+      <label for="input-4">
+        <span class="label-text">Company</span>
+        <span class="nav-dot"></span>
+      </label>
+    
+    
+      <input id="input-5" type="text" placeholder="" required />
+      <label for="input-5">
+        <span class="label-text">Where Are You Located?</span>
+        <span class="nav-dot"></span>
+      </label>
+    
+    
+      <input id="input-6" type="text" placeholder="" required />
+      <label for="input-6">
+        <span class="label-text">Reason For Visit</span>
+        <span class="nav-dot"></span>
+      </label>
+    
+      <button type="submit">Submit</button>
+      <p class="tip">Next</p>
+      <!-- <div class="signup-button">Sign Up</div> -->
+    </form>
+      
+</ion-content>

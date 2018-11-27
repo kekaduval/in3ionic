@@ -1,0 +1,47 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+.idea/
+.sourcemaps/
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+dist/
+node_modules/
+tmp/
+temp/
+hooks/
+platforms/
+plugins/
+plugins/android.json
+plugins/ios.json
+www/
+$RECYCLE.BIN/
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+builds/In3SignIn 2018-06-28 00-09-42/DistributionSummary.plist
+builds/In3SignIn 2018-06-28 00-09-42/ExportOptions.plist
+builds/In3SignIn 2018-06-28 00-09-42/In3SignIn.ipa
+builds/In3SignIn 2018-08-30 20-28-30/DistributionSummary.plist
+builds/In3SignIn 2018-08-30 20-28-30/ExportOptions.plist
+builds/In3SignIn 2018-08-30 20-28-30/In3SignIn.ipa
+builds/In3SignIn 2018-08-30 20-39-29/DistributionSummary.plist
+builds/In3SignIn 2018-08-30 20-39-29/ExportOptions.plist
+builds/In3SignIn 2018-08-30 20-39-29/In3SignIn.ipa
+builds/In3SignIn 2018-10-15 17-48-16/DistributionSummary.plist
+builds/In3SignIn 2018-10-15 17-48-16/ExportOptions.plist
+builds/In3SignIn 2018-10-15 17-48-16/In3SignIn.ipa
